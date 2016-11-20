@@ -1,0 +1,104 @@
+#movies
+    padding: 50px 0px
+    border-bottom: 2px solid rgba(gray, 0.25)
+    
+    header
+        padding: 20px 0 20px 0
+        margin-left: 15px
+        h2, .view_more
+            display: inline
+        h2
+            font-size: 1.75em
+
+        .view_more 
+            float: right
+            font-size: .8em
+            margin: .75em 2.5% 0
+
+    .row
+        width: 100%
+
+        .post
+            width: 14%
+            float: left
+            margin: 0 1.25%
+
+            img
+                width: 100%
+                max-width: 100%
+                box-shadow: 0 0 25px 0 rgba(black, 0.45)
+                transition: all 0.3s ease-in-out
+
+                &:hover
+                    transform: scale(1.1 , 1.1)
+
+            .movie_title 
+                font-size: 15px
+                margin: 9px 0
+
+            .post_info
+                font-size: 12px
+                font-weight: 700
+                margin-top: 2px
+                    
+    @media only screen and( max-width: 768px)
+        padding: 10px 0px  
+    
+        .row
+            .post
+                width: 31%
+                float: left
+                margin: 2% 1%
+                
+                img
+                    margin-bottom: 15px
+                    &:hover
+                        transform: scale(1.05 , 1.05)
+                .movie_title 
+                    font-size: 15px
+                    margin: 9px 0
+                    text-align: center
+
+                .post_info
+                    font-size: 12px
+                    font-weight: 700
+                    margin-top: 2px
+                    text-align: center
+    
+    @media only screen and( max-width: 575px)
+        padding: 15px 0
+        margin-bottom: 15px
+        header
+            text-align: center;
+            margin: 0
+            h2, .view_more
+                display: block
+            
+            h2
+                margin-top: 0
+                
+            .view_more 
+                float: none
+                font-size: 1em
+                margin: 0
+                
+        .row
+            .post
+                width: 47%
+                float: left
+                margin: 2% 1.5%
+                
+                img
+                    margin-bottom: 15px
+                    &:hover
+                        transform: scale(1.05 , 1.05)
+                .movie_title 
+                    font-size: 15px
+                    margin: 9px 0
+                    text-align: center
+
+                .post_info
+                    font-size: 12px
+                    font-weight: 700
+                    margin-top: 2px
+                    text-align: center

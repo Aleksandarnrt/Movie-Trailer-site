@@ -1,0 +1,65 @@
+#top_header
+    padding: 1.5em 0
+    
+    .logo
+        float: left
+        text-transform: uppercase
+        font-size: 1.25em
+        font-weight: 700
+
+        span
+            color: #73e298
+            font-weight: 400
+            
+    .menu
+        display: none
+            
+    #main_nav
+        float: right
+        font-size: 0.9em
+        padding-top: 1em
+        
+        
+        a
+            color: #606090
+            text-decoration: none
+            margin-left: 20px
+    
+    
+    @media only screen and( max-width: 768px)
+        #main_nav 
+            display: none
+            
+            &.active
+                display: block
+                width: 100%
+                transition: all .5s ease-in-out
+                
+                a
+                    display: block
+                    padding: 1em 0
+                    border-bottom: 1px solid #e9e9e9
+                    
+                    &:last-child
+                        border-bottom: none
+            
+            
+        .menu 
+            display: block
+            float: right
+            
+            i
+                font-size: 20px
+                padding-top: 12px
+                color: black
+                
+    @media only screen and( max-width: 480px)
+        padding: 2.5em 0
+        
+        .logo
+            font-size: 1.6em
+            
+        .menu
+            i
+                font-size: 1.6em
+                padding-top: 19px
